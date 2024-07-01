@@ -56,13 +56,11 @@ video {
     font-weight: 400;
     font-size: 35px;
     line-height: 100%;
-
     background: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 20px;
     box-shadow: 5px 5px 0 black;
     position: absolute;
     color: #000000;
-
     padding: 15px;
 }
