@@ -60,6 +60,9 @@ video {
     font-weight: 400;
     font-size: 35px;
     line-height: 100%;
+    right: 0;
+    top: 180px;
+    width: 746px;
     background: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 20px;
@@ -67,4 +70,5 @@ video {
     position: absolute;
     color: #000000;
     padding: 40px;
+    letter-spacing: 0em;
 }
