@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body::before {
     content: "";
     position: absolute;
@@ -5,11 +9,9 @@ body::before {
     background: rgba(255, 255, 255, 0.3);
     background-size: cover;
     background-position: center;
-    height: 100%;
 }
 
 body {
-    height: 100%;
     position: relative;
     min-width: 800px;
     font-family: Raleway, sans-serif;
@@ -20,20 +22,23 @@ body {
     grid-template-areas: "header";
 }
 
-video {
-    height: 100%;
+.video {
     width: 100%;
     object-fit: cover;
     object-position: center;
     grid-area: header;
+    justify-self: center;
 }
 
 .page__heading {
+    width: 739px;
+    height: 408px;
     padding-top: 60px;
     padding-left: 20px;
-    width: 100%;
+
     grid-area: header;
     z-index: 1;
+
     font-weight: 800;
     font-size: 116px;
     line-height: 136px;
@@ -41,6 +46,8 @@ video {
     letter-spacing: 0.035em;
     text-transform: uppercase;
     color: #000000;
+    justify-self: center;
+    cursor: default;
 }
 
 .page__heading::after {
@@ -60,15 +67,18 @@ video {
     font-weight: 400;
     font-size: 35px;
     line-height: 100%;
+    letter-spacing: 0em;
+
     right: 0;
     top: 180px;
     width: 746px;
+
     background: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 20px;
-    box-shadow: 5px 5px 0 black;
+
+    box-shadow: 0px 12px 0px 0px black;
     position: absolute;
     color: #000000;
     padding: 40px;
-    letter-spacing: 0em;
 }
