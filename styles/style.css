@@ -9,23 +9,33 @@ body::before {
 }
 
 body {
-    height: 100%;
     position: relative;
     min-width: 800px;
     font-family: Raleway, sans-serif;
     font-style: normal;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-areas: "header";
+    height: 100%;
 }
 
-video {
-    height: 100%;
+.video {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    grid-area: header;
+    justify-self: center;
 }
 
 .page__heading {
+    width: 739px;
+    padding-top: 60px;
+    padding-left: 20px;
+
+    grid-area: header;
+    z-index: 1;
+
     font-weight: 800;
     font-size: 116px;
     line-height: 136px;
@@ -33,10 +43,8 @@ video {
     letter-spacing: 0.035em;
     text-transform: uppercase;
     color: #000000;
-    position: absolute;
-    padding-top: 60px;
-    width: 100%;
-    z-index: 1;
+    justify-self: center;
+    cursor: default;
 }
 
 .page__heading::after {
@@ -56,13 +64,18 @@ video {
     font-weight: 400;
     font-size: 35px;
     line-height: 100%;
+    letter-spacing: 0em;
+
+    right: 0;
+    top: 180px;
+    width: 746px;
 
     background: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 20px;
-    box-shadow: 5px 5px 0 black;
+
+    box-shadow: 0px 12px 0px 0px black;
     position: absolute;
     color: #000000;
-
-    padding: 15px;
+    padding: 40px;
 }
